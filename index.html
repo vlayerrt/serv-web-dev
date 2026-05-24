@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="style.css">
+	<title>Обратная связь</title>
+</head>
+<body>
+
+<header>
+    <img src="content/mospolytech-logo-white.png" alt="Логотип">
+    <h1>Лабораторная работа — Форма обратной связи</h1>
+</header>
+
+<main>
+    <form action="https://httpbin.org/post" method="POST">
+
+        <label>Имя пользователя</label>
+        <input type="text" name="username" required>
+
+        <label>E-mail пользователя</label>
+        <input type="email" name="email" required>
+
+        <label>Тип обращения</label>
+        <select name="type">
+            <option value="Жалоба">Жалоба</option>
+            <option value="Предложение">Предложение</option>
+            <option value="Благодарность">Благодарность</option>
+        </select>
+
+        <label>Текст обращения</label>
+        <textarea name="message" rows="6" required></textarea>
+
+        <label>Вариант ответа</label>
+
+        <div class="checkboxes">
+            <label>
+                <input type="checkbox" name="reply[]" value="sms">
+                SMS
+            </label>
+
+            <label>
+                <input type="checkbox" name="reply[]" value="email">
+                E-mail
+            </label>
+        </div>
+
+        <button type="submit">Отправить</button>
+
+    </form>
+
+    <a class="page-link" href="headers.php">
+        Перейти на 2 страницу
+    </a>
+
+</main>
+
+<footer>
+    <p>Ершов Владислав Владимирович <br> 257-321 <br>задание для самостоятельно работы</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #111111;
+    color: white;
+    padding: 20px 40px;
+    border-bottom: 1px solid #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header img {
+    width: 70px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+main {
+    width: 700px;
+    margin: 40px auto;
+    background: #242424;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #b0b0b0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+input,
+select,
+textarea {
+    padding: 10px 12px;
+    font-size: 16px;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #888;
+}
+
+select option {
+    background: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.checkboxes {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.checkboxes label {
+    margin-top: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #e0e0e0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #888;
+}
+
+button {
+    margin-top: 24px;
+    padding: 13px;
+    background: #ffffff;
+    color: #111111;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: #cccccc;
+    color: #000000;
+}
+
+.page-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #555;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.page-link:hover {
+    background: #333;
+    border-color: #888;
+}
+
+footer {
+    background: #111111;
+    color: #888888;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
